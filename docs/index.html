@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="./index.css">
   </head>
   <body id="home">
-    <navigation><a href="">比良水が考えること</a><a href="">非加熱へのこだわり</a><a href="">栄養成分</a><a href="">商品</a><a href="">スタッフ紹介</a></navigation>
+    <navigation><a class="active" href="">比良水が考えること</a><a href="">非加熱へのこだわり</a><a href="">栄養成分</a><a href="">商品</a><a href="">スタッフ紹介</a></navigation>
     <main>
-      <article><img src="./assets/top_image1.png">
-        <section id="blog"><img src="./assets/shop_logo.png">
+      <article>
+        <section class="hero">
+          <div class="slider"><img src="./assets/top_image1.png" alt=""><img src="./assets/top_image1.png" alt=""><img src="./assets/top_image1.png" alt=""></div>
+        </section>
+      </article>
+      <article class="content">
+        <section id="blog">
+          <p>ネットショップはじめました</p><a href="https://shop.hirasui.jp" target="_blank"><img src="./assets/shop_logo.png"></a>
           <h3>比良水からのお知らせ</h3>
           <ul class="ors_def">
             <li><a href="http://blog.hirasui.jp/article/187630070.html">お知らせ</a><span>(06/24)</span></li>
@@ -20,23 +26,26 @@
             <li><a href="http://blog.hirasui.jp/article/184534165.html">良いお天気だけど。</a><span>(09/28)</span></li>
           </ul>
         </section>
-        <section id="info"><img src="./assets/logo.png">
-          <p>〒520-0503　滋賀県大津市北比良850番地<br>tel:077(596)1005　fax:077(596)1012<br>
-            <script type="text/javascript">
-              document.write('E&#x2d;mai&#x6c;&#x3a;');
-              document.write('<a href="&#x6d;&#x61;ilto&#x3a;i&#110;&#x66;o&#x40;h&#x69;r&#97;&#x73;&#x75;i&#x2e;jp">');
-              document.write('&#105;n&#102;o&#64;&#x68;&#x69;&#x72;a&#115;&#x75;&#105;&#x2e;&#106;&#x70;');
-              document.write('</a>');
-            </script>
-            <div id="link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-              </svg><img src="./assets/kanjiru_hira.jpeg">
-            </div>
-          </p>
+        <section id="info">
+          <div class="info"><img src="./assets/logo.png">
+            <p>〒520-0503　滋賀県大津市北比良850番地<br>tel:077(596)1005　fax:077(596)1012<br>
+              <script type="text/javascript">
+                document.write('E&#x2d;mai&#x6c;&#x3a; ');
+                document.write('<a href="&#x6d;&#x61;ilto&#x3a;i&#110;&#x66;o&#x40;h&#x69;r&#97;&#x73;&#x75;i&#x2e;jp">');
+                document.write('&#105;n&#102;o&#64;&#x68;&#x69;&#x72;a&#115;&#x75;&#105;&#x2e;&#106;&#x70;');
+                document.write('</a>');
+              </script>
+            </p>
+          </div>
+          <div class="link">
+            <div class="sns"><a href="https://www.instagram.com/hira_sui/" target="_blank">
+                <svg class="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg></a><a href="https://www.facebook.com/hirasuihirasui/" target="_blank">
+                <svg class="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                </svg></a></div><a href="http://kanjiruhira.org/" target="_blank"><img src="./assets/kanjiru_hira.jpeg"></a>
+          </div>
         </section>
       </article>
     </main>

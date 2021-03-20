@@ -1,16 +1,123 @@
+@keyframes sliderIndex
+    0%
+        opacity: 0
+
+    70%
+        opacity: 1
+    100%
+        transform: scale(1.05) rotate(0.01deg)
+        opacity: 0
+    
 #home
     width: 1024px
     margin: 0 auto
-    navigation
+    padding-top: 3rem
+    > navigation
         display: flex
+        justify-content: space-between
+        margin-bottom: 1px
         a
             display: inline-block
+            width: calc(20% - 1px)
             color: #ffffff
             background-color: blue
             text-decoration: none
             padding: 1rem 1.5rem
-            &:active
-    main
+            background-color: #7B7C7D
+            text-align: center
+            margin-right: 1px
+            &.active, &:hover
+                background-color: #1B408C
+            &:last-child
+                margin-right: 0
+    > main
         article
+            > section.hero
+                width: 100%
+                height: 40vw
+                background-color: #000000
+                overflow: hidden
+                // +mobile
+                //     height: 100vw
+                > .slider
+                    position: relative
+                    height: 100%
+                    > img
+                        display: none
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 100%
+                        // will-change: opacity, transform
+                        // +mobile
+                        //     width: 150%
+                        //     height: 100%
+                        //     margin-left: -25%
+                        &.animation
+                            display: block
+                            animation: sliderIndex 8s ease 0s forwards
+        article.content
+            display: flex
+            justify-content: space-between
+            margin-top: 1rem
+            padding-bottom: 3rem
+            section#blog
+                > p
+                    color: #05A0C2
+                    font-size: 1.45rem
+                > a
+                    display: inline-block
+                    border: 1px solid #ccc
+                    padding: 15px
+                    margin-bottom: 1rem
+                    img
+                        width: 265px
+                h3
 
-        
+                ul
+                    margin-left: 0
+                    border: 1px solid #ccc
+                    padding: 1rem
+                    li
+                        margin-left: 0
+                        list-style: none
+                        a
+                            font-size: 1.25rem
+                            text-decoration: none
+                            span
+                                display: inline-block
+                                font-size: 1rem
+                                margin-left: 1rem
+            section#info
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                .info
+                    > img
+                        position: relative
+                        left: -1rem
+                        width: 400px
+                        margin-bottom: 1rem
+                    > p
+                        color: #666
+                        font-size: 1.2rem
+                        line-height: 150%
+                > p
+                .link
+                    display: flex
+                    justify-content: space-between
+                    > a
+                        display: inline-block
+                        border: 1px solid #ccc
+                    .sns
+                        a
+                            display: inline-block
+                            svg
+                                height: 3rem
+                                &.instagram
+                                    fill: #CF2872
+                                    margin-right: 0.5rem
+                                &.facebook
+                                    fill: #3B5998
+                                
+            
