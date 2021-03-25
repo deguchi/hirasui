@@ -16,10 +16,15 @@ a
     width: 1024px
     margin: 0 auto
     padding-top: 3rem
+    @media only screen and (max-width: 767px)
+        width: 100%
+        padding-top: 0
     > navigation
         display: flex
         justify-content: space-between
         margin-bottom: 1px
+        @media only screen and (max-width: 767px)
+            flex-wrap: wrap
         a
             display: inline-flex
             justify-content: center
@@ -33,6 +38,11 @@ a
             background-color: #7B7C7D
             text-align: center
             margin-right: 1px
+            @media only screen and (max-width: 767px)
+                width: 33%
+                margin-bottom: 1px
+                margin-right: 0
+                font-size: 0.6rem
             &.active, &:hover
                 background-color: #1B408C
             &:last-child
@@ -45,8 +55,9 @@ a
                 background-color: #000000
                 overflow: hidden
                 margin-bottom: 3rem
-                // +mobile
-                //     height: 100vw
+                @media only screen and (max-width: 767px)
+                    height: 100vw
+                    margin-bottom: 2rem
                 > .slider
                     position: relative
                     height: 100%
@@ -57,10 +68,10 @@ a
                         left: 0
                         width: 100%
                         // will-change: opacity, transform
-                        // +mobile
-                        //     width: 150%
-                        //     height: 100%
-                        //     margin-left: -25%
+                        @media only screen and (max-width: 767px)
+                            width: 150%
+                            height: 100%
+                            margin-left: -25%
                         &.animation
                             display: block
                             animation: sliderIndex 8s ease 0s forwards
@@ -68,6 +79,8 @@ a
             display: flex
             justify-content: space-between
             padding: 0 1.5rem 3rem
+            @media only screen and (max-width: 767px)
+                flex-direction: column
             section#blog
                 > p
                     font-size: 1.45rem
@@ -97,12 +110,17 @@ a
                 display: flex
                 flex-direction: column
                 justify-content: space-between
+                @media only screen and (max-width: 767px)
+                    margin-top: 3rem
                 .info
                     > img
                         position: relative
                         left: -1rem
                         width: 400px
                         margin-bottom: 1rem
+                        @media only screen and (max-width: 767px)
+                            left: 0
+                            width: 90%
                     > p
                         color: #666
                         font-size: 1.2rem
@@ -111,6 +129,8 @@ a
                 .link
                     display: flex
                     justify-content: space-between
+                    @media only screen and (max-width: 767px)
+                        margin-top: 1rem
                     > a
                         display: inline-block
                         border: 1px solid #ccc
