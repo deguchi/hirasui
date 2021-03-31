@@ -21,4 +21,4 @@ function addAnimationClass() {
 setTimeout(function() {
     addAnimationClass();
     setInterval(addAnimationClass, 6000);
-}, 500);
+}, 300);
