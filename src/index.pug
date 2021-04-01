@@ -41,19 +41,8 @@ html(lang="ja")
           a(href="https://shop.hirasui.jp" target="_blank")
             img(src="./assets/shop_logo.png")
           h3 比良水からのお知らせ
-          ul.ors_def
-              li
-                  a(href='http://blog.hirasui.jp/article/187630070.html') お知らせ
-                  span (06/24)
-              li
-                  a(href='http://blog.hirasui.jp/article/185802051.html') 比良八講
-                  span (04/02)
-              li
-                  a(href='http://blog.hirasui.jp/article/185277397.html') 年末です
-                  span (12/28)
-              li
-                  a(href='http://blog.hirasui.jp/article/184534165.html') 良いお天気だけど。
-                  span (09/28)
+          .openrss
+            script(type='text/javascript' src='https://tomato.rakusai.org/jsout.php?tm=s&cs=def&mc=4&st=d&en=utf-8&uri=http%3A%2F%2Fblog.hirasui.jp%2Findex.rdf' charset='utf-8')
         section#info
           .info
             img(src="./assets/logo.png")
